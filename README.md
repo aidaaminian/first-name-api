@@ -15,7 +15,7 @@ The API supports the following features:
 ### 1. Retrieve All Names
 - **Description**: Retrieves the list of all first names in the database.
 - **Sorting**: The names can be sorted alphabetically in ascending or descending order.
-- **Limiting**: You can limit the number of names returned.
+- **Limiting**: The number of names returned can be limited.
 - **Example Requests**:
   - GET `/first-names`
   - GET `/first-names?sort=asc`
@@ -26,7 +26,7 @@ The API supports the following features:
 ### 2. Search by First Name
 - **Description**: Searches for names that contain a specified substring.
 - **Sorting**: The search results can be sorted alphabetically.
-- **Limiting**: You can limit the number of search results returned.
+- **Limiting**: The number of search results returned can be limited.
 - **Example Requests**:
   - GET `/search-name=John`
   - GET `/search-name=John&sort=asc`
@@ -34,7 +34,7 @@ The API supports the following features:
   - GET `/search-name=John&sort=dec&limit=10`
 
 ### 3. Add a New Name
-- **Description**: Allows you to add a new first name to the database.
+- **Description**: Allows the user to a new first name to the database.
 - **Example Request**:
   - POST `/first-names` with JSON body `{ "name": "Jane" }`
 
@@ -44,7 +44,7 @@ To get started with the project, follow these steps:
 
 1. **Clone the repository:**
    ```bash
-   git clone https://github.com/yourusername/first-name-api.git
+   git clone https://github.com/aidaaminian/first-name-api.git
    cd first-name-api
    ```
 
@@ -79,17 +79,17 @@ To get started with the project, follow these steps:
   - `urls.py`: Routes URLs to views.
   - `views.py`: Contains the logic for handling API requests.
   - `models.py`: Defines the `FirstName` model for MongoDB.
+ 
+## Test Results
+The API endpoints have been thoroughly tested using Postman. Below are the screenshots demonstrating the expected responses:
 
-[contributors-shield]: https://img.shields.io/github/contributors/aidaaminian/first-name-api.svg?style=for-the-badge
-[contributors-url]: https://github.com/aidaaminian/first-name-api/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/aidaaminian/first-name-api.svg?style=for-the-badge
-[forks-url]: https://github.com/aidaaminian/first-name-api/network/members
-[stars-shield]: https://img.shields.io/github/stars/aidaaminian/first-name-api.svg?style=for-the-badge
-[stars-url]: https://github.com/aidaaminian/first-name-api/stargazers
-[issues-shield]: https://img.shields.io/github/issues/aidaaminian/first-name-api.svg?style=for-the-badge
-[issues-url]: https://github.com/aidaaminian/first-name-api/issues
-[license-shield]: https://img.shields.io/github/license/aidaaminian/first-name-api.svg?style=for-the-badge
-[license-url]: https://github.com/aidaaminian/first-name-api/blob/main/LICENSE
+![Image 1](images/01.jpg)
+![Image 2](images/02.jpg)
+![Image 3](images/03.jpg)
+![Image 4](images/04.jpg)
+![Image 5](images/05.jpg)
+![Image 6](images/06.jpg)
+
 
 ## Contributing
 
@@ -102,3 +102,14 @@ If you have a suggestion that would make this better, please fork the repo and c
 3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
 4. Push to the Branch (`git push origin feature/AmazingFeature`)
 5. Open a Pull Request
+
+[contributors-shield]: https://img.shields.io/github/contributors/aidaaminian/first-name-api.svg?style=for-the-badge
+[contributors-url]: https://github.com/aidaaminian/first-name-api/graphs/contributors
+[forks-shield]: https://img.shields.io/github/forks/aidaaminian/first-name-api.svg?style=for-the-badge
+[forks-url]: https://github.com/aidaaminian/first-name-api/network/members
+[stars-shield]: https://img.shields.io/github/stars/aidaaminian/first-name-api.svg?style=for-the-badge
+[stars-url]: https://github.com/aidaaminian/first-name-api/stargazers
+[issues-shield]: https://img.shields.io/github/issues/aidaaminian/first-name-api.svg?style=for-the-badge
+[issues-url]: https://github.com/aidaaminian/first-name-api/issues
+[license-shield]: https://img.shields.io/github/license/aidaaminian/first-name-api.svg?style=for-the-badge
+[license-url]: https://github.com/aidaaminian/first-name-api/blob/main/LICENSE
